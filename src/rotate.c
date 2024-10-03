@@ -6,7 +6,7 @@
 /*   By: tcosta-f <tcosta-f@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 04:14:21 by tcosta-f          #+#    #+#             */
-/*   Updated: 2024/10/02 04:25:55 by tcosta-f         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:22:29 by tcosta-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,14 +36,14 @@ static void	ft_rotate(t_stack ****stack)
 void	ra(t_stack ***stack)
 {
 	ft_rotate(&stack);
-	printf("ra\n");
+	write(1, "ra\n", 3);
 	return ;
 }
 
 void	rb(t_stack ***stack)
 {
 	ft_rotate(&stack);
-	printf("rb\n");
+	write(1, "rb\n", 3);
 	return ;
 }
 
@@ -51,6 +51,6 @@ void	rr(t_stack ***stack_a, t_stack ***stack_b)
 {
 	ft_rotate(&stack_a);
 	ft_rotate(&stack_b);
-	printf("rr\n");
+	write(1, "rr\n", 3);
 	return ;
 }

@@ -6,7 +6,7 @@
 /*   By: tcosta-f <tcosta-f@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 04:13:24 by tcosta-f          #+#    #+#             */
-/*   Updated: 2024/10/02 04:21:59 by tcosta-f         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:23:05 by tcosta-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,13 @@ static void	ft_push(t_stack ****stack_src, t_stack ****stack_dest)
 void	pa(t_stack ***stack_b, t_stack ***stack_a)
 {
 	ft_push(&stack_b, &stack_a);
-	printf("pa\n");
+	write(1, "pa\n", 3);
 	return ;
 }
 
 void	pb(t_stack ***stack_a, t_stack ***stack_b)
 {
 	ft_push(&stack_a, &stack_b);
-	printf("pb\n");
+	write(1, "pb\n", 3);
 	return ;
 }
